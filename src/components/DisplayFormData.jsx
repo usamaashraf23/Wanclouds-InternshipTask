@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { removeFormData } from "../features/form/formSlice";
 import { FaTrashAlt } from "react-icons/fa";
 function DisplayFormData() {
-  const forms = useSelector((state) => state.forms); // Correct path to forms
+  const forms = useSelector((state) => state.forms);
   const dispatch = useDispatch();
 
   return (
