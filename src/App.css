@@ -185,8 +185,30 @@ footer {
   table,
   th,
   td {
+    font-size: 10px;
+    padding: 1px 2px;
+  }
+  div > input {
+    padding: 10px 15px;
+    background-color: #98d8ef;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: bold;
     font-size: 12px;
-    padding: 2px 4px;
+  }
+  .btn-submit {
+    background-color: #2f84e4;
+    padding: 10px 15px;
+    width: 210px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0px;
   }
 }
 /* .sidebar li:hover {
