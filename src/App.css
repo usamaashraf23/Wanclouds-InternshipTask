@@ -56,9 +56,12 @@ nav {
   justify-content: space-between;
   padding: 10px 30px;
   box-shadow: 2px 2px 20px rgb(145, 145, 145);
-  /* background-color: #98d8ef; */
 }
-
+.nav-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 /* Table CSS */
 table,
 th,
@@ -109,11 +112,6 @@ footer {
   font-weight: bold;
   color: white;
 }
-/* .social-icons > div,
-:hover {
-  background-color: #09122c;
-  color: white;
-} */
 .social-link:hover {
   background-color: #09122c;
   color: white;
@@ -130,25 +128,29 @@ footer {
   color: white;
   transition: transform 0.3s ease-in-out;
 }
-/* .sidebar {
-  transform: translateX(-100%);
-} */
-/* .sidebar.open {
-  transform: translateX(0);
-} */
 .sidebar ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 .sidebar li {
   /* margin: 10px 0; */
   font-size: 18px;
   /* background-color: #09122c; */
   padding: 4px 10px;
   color: white;
+}
+.sidebar a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.sidebar a.active,
+.sidebar a:hover {
+  background-color: #a6b1e1; /* Same color for both states */
+  /* color: #09122c; */
+  border-radius: 4px;
+  width: 100%; /* Matches the container width */
 }
 .hamburger-btn {
   background: none;
@@ -157,6 +159,17 @@ footer {
   margin: 10px;
   display: none;
 }
+
+.layout-container {
+  display: flex;
+}
+.outlet-container {
+  flex: 1;
+  justify-content: center;
+  margin: 10px 30px;
+}
+
+/* Responsive Design CSS */
 @media (max-width: 768px) {
   .hamburger-btn {
     display: block;
@@ -210,44 +223,4 @@ footer {
     cursor: pointer;
     margin: 20px 0px;
   }
-}
-/* .sidebar li:hover {
-  margin: 10px 0;
-  color: white;
-  font-size: 18px;
-  background-color: #09122c;
-  padding: 4px 8px;
-  border-radius: 4px;
-  width: 100%;
-} */
-.sidebar a {
-  text-decoration: none;
-  font-weight: bold;
-}
-.layout-container {
-  display: flex;
-}
-.outlet-container {
-  flex: 1;
-  justify-content: center;
-  margin: 10px 30px;
-}
-.nav-links {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-/* .sidebar a.active {
-  background-color: #09122c;
-  color: white;
-  padding: 5px 8px;
-  border-radius: 4px;
-} */
-
-.sidebar a.active,
-.sidebar a:hover {
-  background-color: #a6b1e1; /* Same color for both states */
-  /* color: #09122c; */
-  border-radius: 4px;
-  width: 100%; /* Matches the container width */
 }
